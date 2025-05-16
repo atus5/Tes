@@ -26,25 +26,48 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnCong = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnPhong = new javax.swing.JButton();
+        btnKhanh = new javax.swing.JButton();
+        btnLink = new javax.swing.JButton();
+        btnHung = new javax.swing.JButton();
+        btnKhanh2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnCong.setText("Cộng 2 số");
-        btnCong.addActionListener(new java.awt.event.ActionListener() {
+        btnPhong.setText("Quy Phong");
+        btnPhong.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCongActionPerformed(evt);
+                btnPhongActionPerformed(evt);
             }
         });
 
-        jButton2.setText("jButton2");
+        btnKhanh.setText("Chi Khanh");
+        btnKhanh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKhanhActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("jButton3");
+        btnLink.setText("Canh Linh");
+        btnLink.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLinkActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("jButton4");
+        btnHung.setText("Van Hung");
+        btnHung.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHungActionPerformed(evt);
+            }
+        });
+
+        btnKhanh2.setText("CHIKHANH 2");
+        btnKhanh2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKhanh2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -54,36 +77,60 @@ public class Main extends javax.swing.JFrame {
                 .addGap(121, 121, 121)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton3)
+                        .addComponent(btnLink)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4))
+                        .addComponent(btnHung))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnCong)
+                        .addComponent(btnPhong)
                         .addGap(88, 88, 88)
-                        .addComponent(jButton2)))
-                .addContainerGap(288, Short.MAX_VALUE))
+                        .addComponent(btnKhanh)))
+                .addGap(57, 57, 57)
+                .addComponent(btnKhanh2)
+                .addContainerGap(114, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(111, 111, 111)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCong)
-                    .addComponent(jButton2))
+                    .addComponent(btnPhong)
+                    .addComponent(btnKhanh)
+                    .addComponent(btnKhanh2))
                 .addGap(71, 71, 71)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(btnLink)
+                    .addComponent(btnHung))
                 .addContainerGap(202, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCongActionPerformed
+    private void btnPhongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPhongActionPerformed
         // TODO add your handling code here:
+        new PHONGLA().setVisible(true);
        
-    }//GEN-LAST:event_btnCongActionPerformed
+    }//GEN-LAST:event_btnPhongActionPerformed
+
+    private void btnLinkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLinkActionPerformed
+        // TODO add your handling code here:
+        new Calulate().setVisible(true);
+    }//GEN-LAST:event_btnLinkActionPerformed
+
+    private void btnHungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHungActionPerformed
+        // TODO add your handling code here:
+        new cvi_dtich().setVisible(true);
+    }//GEN-LAST:event_btnHungActionPerformed
+
+    private void btnKhanhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKhanhActionPerformed
+        // TODO add your handling code here:
+        new KIEMTRASOCHIAHET().setVisible(true);
+    }//GEN-LAST:event_btnKhanhActionPerformed
+
+    private void btnKhanh2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKhanh2ActionPerformed
+        // TODO add your handling code here:
+        new TIENDIENNUOC().setVisible(true);
+    }//GEN-LAST:event_btnKhanh2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,9 +168,10 @@ public class Main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCong;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton btnHung;
+    private javax.swing.JButton btnKhanh;
+    private javax.swing.JButton btnKhanh2;
+    private javax.swing.JButton btnLink;
+    private javax.swing.JButton btnPhong;
     // End of variables declaration//GEN-END:variables
 }
